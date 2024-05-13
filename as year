@@ -1,0 +1,40 @@
+List the winners, year and subject where the winner starts with Sir. Show the the most recent first, then by name order.
+
+select winner, yr as year, subject from nobel
+where winner like 'sir%'
+order by year desc, winner
+
+output - >
+
+winner	year	subject
+Sir Peter Ratcliffe	2019	medicine
+Sir Gregory Winter	2018	chemistry
+Sir Fraser Stoddart	2016	chemistry
+Sir John Gurdon	2012	medicine
+Sir Martin Evans	2007	medicine
+Sir Peter Mansfield	2003	medicine
+Sir Paul Nurse	2001	medicine
+Sir Vidiadhar Surajprasad Naipaul	2001	literature
+Sir Harold Kroto	1996	chemistry
+Sir James Black	1988	medicine
+Sir Arthur Lewis	1979	economics
+Sir Nevill Francis Mott	1977	physics
+Sir Martin Ryle	1974	physics
+Sir Bernard Katz	1970	medicine
+Sir John Carew Eccles	1963	medicine
+Sir Frank Macfarlane Burnet	1960	medicine
+Sir Cyril Norman Hinshelwood	1956	chemistry
+Sir Winston Leonard Spencer Churchill	1953	literature
+Sir John Douglas Cockcroft	1951	physics
+Sir Edward Victor Appleton	1947	physics
+Sir Robert Robinson	1947	chemistry
+Sir Alexander Fleming	1945	medicine
+Sir Howard Walter Florey	1945	medicine
+Sir Henry Hallett Dale	1936	medicine
+Sir Norman Angell (Ralph Lane)	1933	peace
+Sir Charles Scott Sherrington	1932	medicine
+Sir Chandrasekhara Venkata Raman	1930	physics
+Sir Frederick Gowland Hopkins	1929	medicine
+Sir Austen Chamberlain	1925	peace
+Sir William Henry Bragg	1915	physics
+Sir William Ramsay	1904	chemistry
