@@ -1,0 +1,42 @@
+Show year, subject, and name of people who won a 'Medicine' prize in an early year (before 1910, not including 1910) 
+together with winners of a 'Literature' prize in a later year (after 2004, including 2004)
+
+
+select yr, subject, winner from nobel
+where (subject = 'medicine' and yr < 1910) or 
+      (subject = 'literature' and yr >= 2004) 
+
+output ->
+
+yr	subject	winner
+1901	medicine	Emil Adolf von Behring
+1902	medicine	Ronald Ross
+1903	medicine	Niels Ryberg Finsen
+1904	medicine	Ivan Petrovich Pavlov
+1905	medicine	Robert Koch
+1906	medicine	Camillo Golgi
+1906	medicine	Santiago Ramón y Cajal
+1907	medicine	Charles Louis Alphonse Laveran
+1908	medicine	Ilya Ilyich Mechnikov
+1908	medicine	Paul Ehrlich
+1909	medicine	Emil Theodor Kocher
+2004	literature	Elfriede Jelinek
+2005	literature	Harold Pinter
+2006	literature	Orhan Pamuk
+2007	literature	Doris Lessing
+2008	literature	Jean-Marie Gustave Le Clézio
+2009	literature	Herta Müller
+2010	literature	Mario Vargas Llosa
+2011	literature	Tomas Tranströmer
+2012	literature	Mo Yan
+2013	literature	Alice Munro
+2014	literature	Patrick Modiano
+2015	literature	Svetlana Alexievich
+2016	literature	Bob Dylan
+2017	literature	Kazuo Ishiguro
+2018	literature	Olga Tokarczuk
+2019	literature	Peter Handke
+2020	literature	Louise Glück
+2021	literature	Abdulrazak Gurnah
+2022	literature	Annie Ernaux
+Nobel Quiz
