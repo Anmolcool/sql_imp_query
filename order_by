@@ -1,0 +1,27 @@
+SELECT winner, subject
+FROM nobel
+WHERE yr = 1984
+ORDER BY CASE 
+    WHEN subject = 'Economics' THEN 1
+    WHEN subject = 'Literature' THEN 2
+    WHEN subject = 'Medicine' THEN 3
+    WHEN subject = 'Peace' THEN 4
+    WHEN subject = 'Chemistry' THEN 5
+    WHEN subject = 'Physics' THEN 6
+    ELSE 7
+END, winner;
+
+
+
+output ->
+
+winner	subject
+Richard Stone	economics
+Jaroslav Seifert	literature
+César Milstein	medicine
+GeorgesF. Köhler	medicine
+Niels Jerne	medicine
+Desmond Mpilo Tutu	peace
+Robert Bruce Merrifield	chemistry
+Carlo Rubbia	physics
+Simon van der Meer	physics
